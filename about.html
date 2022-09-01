@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - version 2</title>
+    <link rel="stylesheet" href="femmy.css">
+    <link rel="stylesheet" href="all.min.css">
+    <script defer src="all.min.js"></script>
+    <!-- Google fonts links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto&family=Source+Sans+Pro:wght@400;600;700;900&family=Titillium+Web&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="RobotoMono-VariableFont_wght.ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bootstrap link  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<style>
+    #about-heros {
+        display: flex;
+        align-items: center;
+        /* height: 60vh; */
+        /* margin-top: 70px !important; */
+        width: 100%;
+        background: url("imgs/TechnologyDesign.png");
+    }
+
+    #about-heros h1 {
+        font-size: 4rem;
+        font-family: "Ubuntu";
+        font-weight: bold;
+        background-color: #023020;
+        background-image: linear-gradient(to top, #0f0 0%, #023020 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        margin: auto 0;
+    }
+
+    @media (min-width: 250px) and (max-width: 450px) {
+        #about-heros {
+            width: 100%;
+            height: 50vh;
+            background: url("imgs/mobileTechDesigns.png") no-repeat center;
+        }
+    }
+</style>
+
+<body>
+    <div class="progress-bar"></div>
+    <div class="scroll-path"></div>
+    <div id="header" class="sticky-top d-inline-flex  w-100 justify-content-between px-4 py-2">
+        <div class="brand d-flex justify-content-center align-items-center"><img src="imgs/hyLogo.png" class="h-75"
+                alt=""></div>
+        <div class="right ">
+            <ul class="links list-unstyled mb-0 d-inline-flex">
+                <li class="my-auto mx-4"><a href="femi.html" class="text-decoration-none"><span
+                            style="color: #f00;">01.</span>
+                        Home</a></li>
+                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #f00;">02.</span>
+                        About</a></li>
+                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #f00;">03.</span>
+                        Project</a></li>
+                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #f00;">04.</span>
+                        Contact</a></li>
+                <li><button class="btn btn-outline-danger rounded-0 py-1"><a href=""
+                            class="text-decoration-none">Resume</a></button></li>
+            </ul>
+            <div class="bars d-flex flex-column justify-content-center align-items-center mt-2">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <div id="about-heros">
+        <!-- <img class="position-absolute h-50 w-100" src="imgs/TechnologyDesign.png" alt=""> -->
+        <h1 class="ms-5">About me</h1>
+        <i class="fas fa-arrow-right"></i>
+    </div>
+    <div id="About" class="vh-75">
+        <div class="row m-0">
+            <div class="col-lg-7 mx-auto">
+                <div class="about-top d-inline-flex mb-3">
+                    <h2><span style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">01</span> About me
+                    </h2>
+                    <div></div>
+                </div>
+                <p>Hi, I'm Femmy I'm a creative and innovative web developer based on Lagos city, Nigeria. <br> Since
+                    the
+                    world is
+                    moving toward technology! I decided to join the technicians in order to make the word a better
+                    place, make complex things look easy and cool.</p>
+                <p>I'm literally a quick learner in any kind of complex activities and can adapt to the team and
+                    surroundings
+                    quickly, my goal is to become a Full stack Engineer, been able to build app for both frontend and
+                    backend as well
+                    as cloud computing.
+                    <br>
+                    <br> Shortly after getting employed on my first role as software engineer, I'm
+                    looking forward on working on a wide
+                    variety of interesting projects on a daily basis.<p>
+                        <p>Here are some few technologies have been working with lately.</p>
+                        <div class="technologies d-flex justify-content-between">
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <i class="fas fa-angle-right mx-2 mt-0"></i><i class="fas fa-js-square"></i>
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Vue (Nuxt) js
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Node (Express)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Git (Github)
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <i class="fas fa-angle-right mx-2"></i>Html S(CSS)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Bootstrap (Tailwind)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Jquery
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Firebase
+                                </li>
+
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <i class="fas fa-angle-right mx-2"></i>Wordpress
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Adobe XD (Figma)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Adobe PS (Corel Draw)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Mail chimp
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+        <div class="d-lg-none m-auto w-100 sm">
+            <img src="/imgs/FemmyCartooned-tab.png" class="w-100" alt="">
+        </div>
+    </div>
+
+    <script src="femmy.js"></script>
+
+</body>
+
+</html>

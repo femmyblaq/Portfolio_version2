@@ -2,6 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: "Ubuntu"; */
+}
+
+.preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #343a40;
+    transition: 300ms all ease;
+}
+
+.fade-out {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.logo {
+    position: absolute;
+    animation: logoloader 1.5s linear infinite;
+}
+
+@keyframes logoloader {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
 }
 
 ::-webkit-scrollbar {
@@ -15,7 +48,7 @@
     width: 10px;
     height: 10px;
     background-color: rgba(255, 255, 255, 0 0.5);
-
+    z-index: 111;
 }
 
 .progress-bar {
@@ -25,6 +58,7 @@
     width: 10px;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: animate 5s linear infinite;
+    z-index: 111;
 }
 
 @keyframes animate {
@@ -48,6 +82,8 @@
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(10px);
+    z-index: 111;
+
 }
 
 .progress-bar:after {
@@ -59,12 +95,14 @@
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(30px);
+    z-index: 111;
+
 }
 
 body {
     height: 100vh;
     z-index: -10;
-    background: url("imgs/portfolio-v2-design.png") no-repeat center;
+    /* background: url("imgs/portfolio-v2-design-resized.png") no-repeat center; */
 }
 
 #header {
@@ -80,10 +118,13 @@ body {
 }
 
 #header .right .links a {
-    font-size: 13px;
+    font-size: 16px;
     color: #000;
     font-weight: 500;
     transition: all 0.5s ease;
+    /* font-family: "Open Sans"; */
+    font-family: "Roboto Mono" !important;
+
 }
 
 #header .right .links a:hover {
@@ -99,8 +140,9 @@ body {
     border-left: 1px solid rgba(255, 255, 255, 0.1); */
     /* overflow: hidden; */
     /* backdrop-filter: blur(50px); */
+    font-family: "Ubuntu";
     z-index: 10;
-    /* background: url("imgs/portfolio-v2-design.png") no-repeat center; */
+    background: url("imgs/portfolio-v2-design.png") no-repeat center;
 }
 
 #heros .socials ul li a {
@@ -109,16 +151,20 @@ body {
     cursor: pointer;
     /* display: none; */
 
+
 }
 
-#heros .socials ul li a i {
-    display: none;
-    cursor: pointer !important;
+#heros .socials ul li {
+    /* display: none; */
+    /* color: #0f0 !important; */
+    transition: 200ms ease;
+    cursor: pointer;
 }
 
-#heros .socials ul li a:hover {
-    margin-bottom: 4px;
-    color: #f00;
+#heros .socials ul li:hover a {
+    /* margin-bottom: 4px; */
+    color: #0f0 !important;
+    transform: translateY(-5px);
 }
 
 #heros .socials ul div a {
@@ -126,12 +172,13 @@ body {
 }
 
 #heros .socials ul div a:hover {
-    color: #f00 !important;
+    color: #0f0 !important;
 }
 
 #heros .row {
     transform: translateY(-50%);
     width: 80% !important;
+    z-index: -1;
 }
 
 #heros .row .col-lg-3 {
@@ -147,14 +194,14 @@ body {
     border-right: 0.2rem solid #000;
 }
 
-#heros .row .intro p {
+#heros .row .intro .hi {
     font-size: 0.8rem;
 }
 
 #heros .row .intro h1 {
     font-size: 4rem;
-    background-color: #f00;
-    background-image: linear-gradient(to top, #f00 0%, #f0f 100%);
+    background-color: #023020;
+    background-image: linear-gradient(to top, #0f0 0%, #023020 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -165,7 +212,7 @@ body {
 #heros .row .intro h2 {
     font-size: 2.5rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to top, rgb(23, 43, 23) 0%, #023020 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -184,13 +231,13 @@ body {
     margin-top: 50px;
     background: rgba(255, 255, 255, 0.7);
     transition: 0.5s;
-    border: 1px solid #b721ff;
+    border: 1px solid #0f0;
 }
 
 #heros .row .intro a:hover {
     letter-spacing: 0.25em;
-    box-shadow: 0 0 15px #301934;
-    color: #d436f0;
+    box-shadow: 0 0 5px #023020;
+    color: #0f0;
     background: rgba(255, 255, 255, 0.9);
 }
 
@@ -220,7 +267,7 @@ body {
     transform: translateY(-50%);
     height: 10px;
     background: #27282c;
-    border: 2px solid #d436f0;
+    border: 2px solid #023020;
     transition: 0.5s;
 }
 
@@ -228,7 +275,7 @@ body {
     left: 0;
     transform: translateX(-50%) rotate(45deg);
     top: -6px;
-    box-shadow: 40px 39px #d436f0;
+    box-shadow: 40px 39px #0f0;
 }
 
 .nav {
@@ -246,16 +293,16 @@ body {
 
 .nav ul {
     margin-top: -130px;
-    margin-left: -9px;
+    margin-left: -15px;
 }
 
 .nav-items li a {
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     border: 2px solid #000;
     transform: rotate(45deg);
     padding: 0 !important;
-    margin: 7px;
+    margin: 10px;
 
 }
 
@@ -266,7 +313,7 @@ body {
 }
 
 .nav-items li a:active {
-    border: 2px solid #ff0000;
+    border: 2px solid #0f0;
     background-color: #000;
 }
 
@@ -278,7 +325,107 @@ body {
     bottom: 0;
 }
 
-@media (min-width: 500px) and (max-width: 900px) {
+#About {
+    margin: 120px 0;
+}
+
+#About .about-top h2 {
+    color: #7fca8b;
+    font-family: "Ubuntu";
+    margin-left: 5px;
+}
+
+#About .about-top h2 span {
+    color: #023020;
+    font-family: "Roboto Mono" !important;
+}
+
+#About .about-top div {
+    width: 400px;
+    height: 2px;
+    background-color: #023020;
+    margin: auto 20px;
+}
+
+#About ul {
+    font-size: 0.8rem;
+    font-family: "Roboto Mono";
+}
+
+#About ul li i {
+    color: #0f0;
+}
+
+/* #Skills .row {
+    height: 60vh;
+} */
+
+#Skills ul li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #023020;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#Skills .row h1,
+#other-projects h1 {
+    font-weight: bold;
+    color: #3b8606;
+}
+
+#other-projects {
+    transition: 0.5s all ease-in-out;
+    height: auto;
+}
+
+#other-projects .containers .card {
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+#other-projects .containers .card .link-spot {
+    visibility: hidden;
+    transition: 0.5s all ease-in-out;
+}
+
+#other-projects .containers .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 15px 8px 6px -6px rgb(235 234 242 / 58%);
+}
+
+#other-projects .containers .card:hover .link-spot {
+    visibility: visible;
+}
+
+#contact {
+    margin: 100px auto;
+    padding: 50px 0;
+}
+
+#contact .row input,
+textarea {
+    display: block;
+    height: 50px;
+    /* box-shadow: 20px, 20px, 50px rgba(0, 0, 0, 0.5); */
+    background: rgba(103, 102, 102, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    font-family: "Ubuntu";
+    border: none;
+}
+
+#contact .row input:focus {
+    border: none;
+    border-bottom: 2px solid #023020;
+}
+
+#contact .row textarea {
+    overflow: scroll;
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
     #heros {
         height: 60vh;
         overflow: visible;
@@ -292,6 +439,61 @@ body {
     #heros .row .col-lg-6 h2,
     p {
         width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    #heros {
+        height: 60vh;
+        overflow: visible;
+        border-bottom: 1px solid #444;
+    }
+
+    #heros .row {
+        width: 100% !important;
+    }
+
+    #heros .row .col-lg-6 {
+        margin-left: 80px !important;
+        width: 70% !important;
+    }
+
+    #heros .row .col-lg-3 img {
+        display: none !important;
+    }
+
+    #heros .row .col-lg-6 h2,
+    p {
+        width: 100% !important;
+    }
+
+    #About {
+        width: 75vw;
+        margin: 0 auto !important;
+        padding: 100px 20px;
+    }
+
+    #About .about-top div {
+        width: 300px;
+        margin: auto 20px;
+    }
+
+    #About .sm img {
+        width: 300px !important;
+        margin-left: 100px;
+    }
+
+    #Skills .row {
+        display: block !important;
+        height: 50vh !important;
+    }
+
+    #Skills .col-lg-6 {
+        height: 20vh;
+    }
+
+    #Skills .mt-auto {
+        margin-top: 0 !important;
     }
 }
 
@@ -363,28 +565,88 @@ body {
         background: url("imgs/Mobile-design-back.png") no-repeat center !important;
     }
 
+    #heros .row {
+        width: 100% !important;
+        display: block !important;
+    }
+
     #heros .row .col-lg-6 {
         margin-left: 10px !important;
     }
 
+    #heros .row .col-lg-6 .intro {
+        width: 100%;
+    }
+
     #heros .row .col-lg-6 .intro .w-25 {
-        width: 70% !important;
+        width: 30% !important;
     }
 
     #heros .row .col-lg-6 p {
-        width: 70%;
+        width: 100%;
     }
 
     #heros .row .col-lg-6 h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     #heros .row .col-lg-6 h2 {
         font-size: 1.7rem;
+        font-weight: 900 !important;
     }
 
     #heros .nav,
+    #heros .sm,
     #heros .socials {
         display: none !important;
+    }
+
+    #About {
+        width: 100vw;
+        margin: 0 auto !important;
+        padding: 70px 10px;
+    }
+
+    #About .about-top div {
+        width: 150px;
+        margin: auto 10px;
+    }
+
+    #About .sm img {
+        width: 300px !important;
+        margin-left: 100px;
+    }
+
+    #Skills .row {
+        display: block !important;
+        width: 100% !important;
+        height: 100vh !important;
+        padding: 10px !important;
+    }
+
+    #Skills .col-lg-6 {
+        /* height: 50vh; */
+        width: 100% !important;
+    }
+
+    #Skills .mt-auto {
+        /* margin-top: 0 !important; */
+    }
+
+    #other-projects {
+        width: 100% !important;
+        padding: 10px;
+    }
+
+    #contact {
+        width: 100% !important;
+    }
+
+    #contact p {
+        padding: 0 20px !important;
+    }
+
+    #contact .w-75 {
+        width: 90% !important;
     }
 }

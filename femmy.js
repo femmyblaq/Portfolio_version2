@@ -72,3 +72,12 @@ window.onscroll = () => {
   let progressHeight = (window.pageXOffset / totalHeight) * 100;
   progress.style.height = progressHeight + "%";
 };
+const activePage = window.location.pathname;
+const nav = document.querySelectorAll("nav-item a");
+
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  console.log("i got Loaded");
+  preloader.classList.add("fade-out");
+});

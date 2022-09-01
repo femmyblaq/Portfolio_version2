@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="femmy.css">
     <link rel="stylesheet" href="all.min.css">
     <script defer src="all.min.js"></script>
+    <!-- Google fonts links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto&family=Source+Sans+Pro:wght@400;600;700;900&family=Titillium+Web&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="RobotoMono-VariableFont_wght.ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <!-- Bootstrap Link  -->
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,22 +29,28 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <img src="imgs/hyLogo.png" class="logo" alt="">
+    </div>
     <div class="progress-bar"></div>
     <div class="scroll-path"></div>
-    <div id="header" class="d-inline-flex  w-100 justify-content-between px-4 py-2">
+    <div id="header" class="sticky-top d-inline-flex  w-100 justify-content-between px-4 py-2">
         <div class="brand d-flex justify-content-center align-items-center"><img src="imgs/hyLogo.png" class="h-75"
                 alt=""></div>
         <div class="right ">
             <ul class="links list-unstyled mb-0 d-inline-flex">
-                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #f00;">01.</span>
+                <li class="my-auto mx-4"><a href="femi.html" class="text-decoration-none"><span
+                            style="color: #0f0;">01.</span>
                         Home</a></li>
-                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #f00;">02.</span>
+                <li class="my-auto mx-4"><a href="about.html" class="text-decoration-none"><span
+                            style="color: #0f0;">02.</span>
                         About</a></li>
-                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #f00;">03.</span>
+                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #0f0;">03.</span>
                         Project</a></li>
-                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #f00;">04.</span>
+                <li class="my-auto mx-4"><a href="" class="text-decoration-none"><span style="color: #0f0;">04.</span>
                         Contact</a></li>
-                <li><button class="btn btn-outline-info rounded-0"><a href="">Resume</a></button></li>
+                <li><button class="btn btn-outline-danger rounded-0 py-1"><a href=""
+                            class="text-decoration-none">Resume</a></button></li>
             </ul>
             <div class="bars d-flex flex-column justify-content-center align-items-center mt-2">
                 <span></span><span></span><span></span>
@@ -46,66 +60,312 @@
     <div id="heros" class=" position-relative">
         <!-- <img src="imgs/portfolio-v2-design.png" class="w-100 h-100" alt=""> -->
         <div class="socials ms-5 my-auto position-fixed bottom-0">
-            <ul class="list-unstyled ">
+            <ul class="list-unstyled mb-0">
                 <li><a href="" class="text-dark"><i class="fab fa-github-square"></i></a></li>
                 <li><a href="" class="text-dark"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="" class="text-dark"><i class="fab fa-instagram-square"></i></a></li>
                 <li><a href="" class="text-dark"><i class="fab fa-facebook-square"></i></a></li>
                 <li><a href="" class="text-dark"><i class="fab fa-twitter-square"></i></a></li>
                 <li><a href="" class="text-dark"><i class="fas-facebook"></i></a></li>
-                <div class="mt-auto"><a href="" class="mt-3 text-decoration-none text-dark fw-bold"
+                <div class="mt-auto"><a href="" class="mt-2 me-0 text-decoration-none text-dark fw-normal"
                         style="writing-mode: vertical-lr; transform: rotate(180deg); margin-left: -5px;">Femmyblaq@gmail.com</a>
                 </div>
             </ul>
 
         </div>
         <div class="row mx-0  p-0 position-absolute top-50">
-            <div class="col-lg-6 col-md-6" style="margin-left: 150px;">
+            <div class="col-lg-6 col-md-6 col-sm-12" style="margin-left: 150px;">
                 <div class="intro my-auto">
                     <div class="w-25 text-white">
-                        <p class="bg-dark p-1 m-0 text-center fw-bold">Hi, my name is</p>
+                        <p class="hi bg-dark p-1 m-0 text-center fw-bold">Hi, my name is</p>
                     </div>
                     <h1 class="fw-bolder">Femmy HY.</h1>
                     <h2 class="fw-bolder">I create and build designs for <span class="txt-type" data-wait="3000"
                             data-words='[" Web.", " UI/UX.", " Mobile."]'></span>
                     </h2>
-                    <p class="my-3 pb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, illum?
-                        Facere
-                        rerum illo iusto
-                        quibusdam omnis alias id quaerat quis!</p>
+                    <p class="my-3 pb-4 brief">I'm a frontend developer/engineer, I design for web and everything
+                        between. I like
+                        to
+                        craft innovative and scalable frontend product with great user experiences and effectiveness.
+                    </p>
 
                     <a href=""><span>Get In Touch</span><i></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 ms-auto">
+            <div class="col-lg-3 ms-auto sm">
                 <img src="/imgs/FemmyCartooned.png" class="w-100" alt="">
             </div>
         </div>
         <div class="nav">
             <ul class="nav-items list-unstyled">
-                <li class="nav-item"><a href="" class="nav-link text-decoration-none"></a></li>
-                <li class="nav-item"><a href="" class="nav-link text-decoration-none"></a></li>
-                <li class="nav-item"><a href="" class="nav-link text-decoration-none"></a></li>
-                <li class="nav-item"><a href="" class="nav-link text-decoration-none"></a></li>
-                <li class="nav-item"><a href="" class="nav-link text-decoration-none"></a></li>
+                <li class="nav-item"><a href="#heros" class="nav-link text-decoration-none"></a></li>
+                <li class="nav-item"><a href="#About" class="nav-link text-decoration-none"></a></li>
+                <li class="nav-item"><a href="#Skills" class="nav-link text-decoration-none"></a></li>
+                <li class="nav-item"><a href="#other-projects" class="nav-link text-decoration-none"></a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link text-decoration-none"></a></li>
             </ul>
             <div></div>
         </div>
-        <!-- <div class="d-flex my-auto position-absolute top-50">
-            <div class="intro my-auto">
-                <div class="bg-dark px-3 py-2 text-white">
-                    <p>Hi, my name is</p>
+    </div>
+
+    <div id="About" class="vh-75">
+        <div class="row m-0">
+            <div class="col-lg-7 mx-auto">
+                <div class="about-top d-inline-flex mb-3">
+                    <h2><span style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">01</span> About me
+                    </h2>
+                    <div></div>
                 </div>
-                <h1 class="fw-bolder">Femmy HY</h1>
-                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, illum? Facere
-                    rerum illo iusto
-                    quibusdam omnis alias id quaerat quis!</p>
+                <p>Hi, I'm Femmy I'm a creative and innovative web developer based on Lagos city, Nigeria. <br> Since
+                    the
+                    world is
+                    moving toward technology! I decided to join the technicians in order to make the word a better
+                    place, make complex things look easy and cool.</p>
+                <p>I'm literally a quick learner in any kind of complex activities and can adapt to the team and
+                    surroundings
+                    quickly, my goal is to become a Full stack Engineer, been able to build app for both frontend and
+                    backend as well
+                    as cloud computing.
+                    <br>
+                    <br> Shortly after getting employed on my first role as software engineer, I'm
+                    looking forward on working on a wide
+                    variety of interesting projects on a daily basis.<p>
+                        <p>Here are some few technologies have been working with lately.</p>
+                        <div class="technologies d-flex justify-content-between">
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <i class="fas fa-angle-right mx-2 mt-0"></i>JavaScript (Es6)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Vue (Nuxt) js
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Node (Express)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Git (Github)
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <i class="fas fa-angle-right mx-2"></i>Html S(CSS)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Bootstrap (Tailwind)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Jquery
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Firebase
+                                </li>
 
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <i class="fas fa-angle-right mx-2"></i>Wordpress
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Adobe XD (Figma)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Adobe PS (Corel Draw)
+                                </li>
+                                <li class="my-2">
+                                    <i class="fas fa-angle-right mx-2"></i>Mail chimp
+                                </li>
+                            </ul>
+                        </div>
             </div>
-            <div class="cartoon-pics">
+        </div>
+        <div class="d-lg-none m-auto w-100 sm">
+            <img src="/imgs/FemmyCartooned-tab.png" class="w-100" alt="">
+        </div>
+    </div>
 
+    <div id="Skills" class="py-5">
+        <div class="row m-0 p-0 w-75 mx-auto">
+            <div class="col-lg-6">
+                <h1>Designs</h1>
+                <span style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Frontend
+                    Development.</span>
+                <p class="mt-2">I'm typically not the best designer in the world, but at least I am best of me, With the
+                    idea gotten
+                    from <span style="color: #0f0;">Graphics design</span> I was able to apply them on the web which
+                    sharpens my skill and makes design
+                    looks more cool on the web. I was able to manipulate fonts, buttons and some other complex
+                    components on the web.</p>
             </div>
-        </div> -->
+            <div class="col-lg-6 mt-auto text-end">
+                <ul class="list-unstyled d-inline-flex">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+
+            <div class="col-lg-6">
+                <ul class="list-unstyled d-inline-flex">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mt-auto text-end">
+                <h1>Engineering</h1>
+                <span style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Connecting to
+                    Backend</span>
+                <p class="mt-2">Well, with the help of some effective database tools, which allows me to be able to
+                    store data and as well retrieve them, e.g <span
+                        style="color: #0f0;"">Firebase</span> has been so helpful in my development career, it allows me create some dynamic applicaions with zero hassle. Another is <span style="
+                        color: #0f0;">Mail Chimp</span>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="other-projects" class="w-75 mx-auto py-5">
+        <div class="content py-3 text-center">
+            <h1>Other Networthy Projects</h1>
+            <p style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">view the archive</p>
+        </div>
+
+        <div class="row m-0 containers">
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card position-relative">
+                    <ul class="list-unstyled d-inline-flex position-absolute top-0 end-0 m-2 link-spot">
+                        <li class="mx-1" style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;"><a href=""
+                                class="text-dark"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="mx-1" style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;"><a href=""
+                                class="text-dark"><i class="fab fa-file-excel"></i></a>
+                        </li>
+                    </ul>
+                    <img src="imgs/Seccon_logo_web.png" class="card-img-top mx-auto py-4" style="width: 100px;"
+                        alt="...">
+                    <div class="card-body bg-light">
+                        <h6 class="card-text fw-bold" style="font-family: 'Ubuntu';">
+                            Professional website using html and css
+                        </h6>
+                        <p>Security Consultant helps analyze and assesses security Business,
+                            Education,
+                            Entreprenuership for better
+                            management and support in the society.</p>
+                        <ul class="list-unstyled d-inline-flex">
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Html
+                            </li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Css
+                            </li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">
+                                Bootstrap</li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">
+                                JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card position-relative">
+                    <ul class="list-unstyled d-inline-flex position-absolute top-0 end-0 m-2 link-spot">
+                        <li class="mx-1" style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;"><a href=""
+                                class="text-dark"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="mx-1" style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;"><a href=""
+                                class="text-dark"><i class="fab fa-file-excel"></i></a>
+                        </li>
+                    </ul>
+                    <img src="imgs/e-wallet-logo.png" class="card-img-top w-50 mx-auto py-4" alt="...">
+                    <div class="card-body bg-light">
+                        <h6 class="card-text fw-bold" style="font-family: 'Ubuntu';">
+                            Professional website using html, css, vue js and api
+                        </h6>
+                        <p>Security Consultant helps analyze and assesses security Business,
+                            Education,
+                            Entreprenuership for better
+                            management and support in the society.</p>
+                        <ul class="list-unstyled d-inline-flex">
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Html
+                            </li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Css
+                            </li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">
+                                Bootstrap</li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">
+                                JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card position-relative">
+                    <ul class="list-unstyled d-inline-flex position-absolute top-0 end-0 m-2 link-spot">
+                        <li class="mx-1" style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;"><a href=""
+                                class="text-dark"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="mx-1" style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;"><a href=""
+                                class="text-dark"><i class="fab fa-file-excel"></i></a>
+                        </li>
+                    </ul>
+                    <img src="imgs/WordFightLogo.png" class="card-img-top w-50 mx-auto py-4" alt="...">
+                    <div class="card-body bg-light">
+                        <h6 class="card-text fw-bold" style="font-family: 'Ubuntu';">
+                            Professional website using html, css and vue js
+                        </h6>
+                        <p>Security Consultant helps analyze and assesses security Business,
+                            Education,
+                            Entreprenuership for better
+                            management and support in the society.</p>
+                        <ul class="list-unstyled d-inline-flex">
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Html
+                            </li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">Css
+                            </li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">
+                                Bootstrap</li>
+                            <li class="mx-1" style="color: #023020; font-family: 'Roboto Mono'; font-size: 0.8rem;">
+                                JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5 d-flex justify-content-center">
+            <button class="btn btn-lg btn-outline-success rounded-0" style="font-family: 'Roboto Mono';">View all
+                Projects</button>
+        </div>
+
+    </div>
+
+
+    <div id="contact" class="w-75 mx-auto">
+        <div class="top-content text-center">
+            <p style="color: #023020; font-family: 'Roboto Mono'; font-size: 1rem;" class="m-0"><span>04. </span>What's
+                Next?</p>
+            <h2 class="fw-bold" style="color: #023020;">Get In Touch</h2>
+            <p class="px-5 my-3">Well I'm looking for any opportunities that can offer me well and as well gain more
+                experience as a
+                software engineer, and I promise to give my possible best as always. My inbox is wildly open, whether
+                you want to say "Hi", or need web designs for your business so I can make them for you, I will try my
+                possible best to reply as soon as possible. Thank you.</p>
+        </div>
+        <form action="">
+            <div class="row m-0 w-75 mx-auto">
+                <div class="col-md-6">
+                    <label style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;" for="name">username</label>
+                    <input class="w-100" id="userName" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;" for="email">Email</label>
+                    <input class="w-100" id="email" type="text">
+                </div>
+                <div class="col-12 mt-3">
+                    <label style="color: #000; font-family: 'Roboto Mono'; font-size: 1rem;" for="email">Message</label>
+                    <textarea class="w-100" name="message" id="" cols="20" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
     </div>
 
     <script src="femmy.js"></script>
