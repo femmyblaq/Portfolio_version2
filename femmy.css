@@ -330,7 +330,7 @@ body {
 }
 
 #About .about-top h2 {
-    color: #7fca8b;
+    color: #023020;
     font-family: "Ubuntu";
     margin-left: 5px;
 }
@@ -371,7 +371,7 @@ body {
 #Skills .row h1,
 #other-projects h1 {
     font-weight: bold;
-    color: #3b8606;
+    color: #023020;
 }
 
 #other-projects {
@@ -398,7 +398,7 @@ body {
     visibility: visible;
 }
 
-#contact {
+/* #contact {
     margin: 100px auto;
     padding: 50px 0;
 }
@@ -407,7 +407,7 @@ body {
 textarea {
     display: block;
     height: 50px;
-    /* box-shadow: 20px, 20px, 50px rgba(0, 0, 0, 0.5); */
+ box-shadow: 20px, 20px, 50px rgba(0, 0, 0, 0.5); 
     background: rgba(103, 102, 102, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -423,7 +423,87 @@ textarea {
 
 #contact .row textarea {
     overflow: scroll;
+}  */
+
+/* My form styling  */
+.box {
+    height: auto;
+    width: 60%;
+    text-align: center;
+    /* display: grid; */
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 0.5rem;
 }
+
+#contact .form {
+    width: 100%;
+    position: relative;
+    /* margin: 50px 0; */
+}
+
+#contact .form-div {
+    position: relative;
+    margin-bottom: 2rem;
+    height: 48px;
+}
+
+#contact .form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    border: 2px solid #8c8984;
+    font-family: inherit;
+    font-size: inherit;
+    color: #000;
+    outline: none;
+    background: none;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.5rem;
+
+
+}
+
+#contact .form__input:hover {
+    border-color: #0f0;
+}
+
+#contact .form__input:focus {
+    border-color: #8c8984;
+}
+
+#contact .form__input:active {
+    background: none;
+}
+
+#contact .form__label {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: #000;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in,
+        font-size 200ms ease-in;
+    background: #fff;
+}
+
+#contact .form__input:focus~.form__label,
+#contact .form__input:not(:placeholder-shown).form__input:not(:focus) {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+
+#footer {
+    margin-top: 100px;
+}
+
+/* My form styling  */
 
 @media (min-width: 500px) and (max-width: 767px) {
     #heros {
@@ -614,7 +694,7 @@ textarea {
 
     #About .sm img {
         width: 300px !important;
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     #Skills .row {
@@ -648,5 +728,19 @@ textarea {
 
     #contact .w-75 {
         width: 90% !important;
+    }
+
+    .box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #footer .footer-top {
+        width: 100% !important;
+        margin: 30px 15px;
+    }
+
+    #footer .footer-top .col-lg-3 {
+        margin-top: 30px;
     }
 }
